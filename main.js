@@ -36,7 +36,7 @@ function addDeleteButtons() {
   deleteButtons.forEach((button) => {
     if (button.getAttribute("data-book") == bookNumber) {
       //Only add eventListeners to new books
-      button.addEventListener("clicksss", () => {
+      button.addEventListener("click", () => {
         deleteBook(button.getAttribute("data-book"));
       });
     }
